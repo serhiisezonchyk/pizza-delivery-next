@@ -1,0 +1,19 @@
+.sm-menu-div {
+    @apply bg-white;
+  svg {
+    @apply text-[30px] cursor-pointer;
+  }
+  .links {
+    @apply max-h-0 transition-max-height  duration-500 ease-in-out overflow-hidden z-50;
+    a {
+      @apply hidden;
+    }
+
+    &.open {
+      @apply bg-mint text-white absolute left-0 top-[50px] sm:top-[100px] max-h-[90vh] h-[90vh] w-full flex flex-col justify-center items-center;
+      a {
+        @apply flex py-[5px] w-full justify-center;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.payment-page{
+    @apply h-[84vh] sm:h-[83vh];
+    button{
+        @apply bg-mint px-[10px] py-[5px] text-white rounded-[5px] m-[10px];
+    }
+}

@@ -1,0 +1,6 @@
+.footer{
+    @apply h-[40px] bg-mint flex justify-between w-full px-[30px] text-white items-center;
+    a{
+        @apply font-bold;
+    }
+}

@@ -1,0 +1,39 @@
+.order-page {
+  @apply p-4 sm:px-[20px] xl:px-[40px] h-[84vh] sm:h-[83vh] overflow-y-scroll text-[12px] sm:text-[13px] lg:text-[14px];
+  .order-table {
+    @apply w-full border-separate border-spacing-1 ;
+    tr {
+      @apply text-left;
+      th {
+        &.block-sm {
+          @apply hidden sm:inline-grid;
+        }
+      }
+      td {
+        @apply py-2 px-1;
+
+        &.block-sm {
+          @apply hidden sm:inline-grid;
+        }
+      }
+      &.order-table-body {
+        @apply odd:bg-body-lightgrey text-start;
+        .admin-status-row {
+          @apply flex flex-row gap-2 justify-center;
+          input {
+            @apply p-2 border-mint border-[1px] rounded-[5px];
+          }
+          button {
+            @apply p-2 bg-mint rounded-[5px] flex justify-center items-center;
+            svg {
+              @apply text-white;
+            }
+          }
+        }
+        &.is-delivered{
+          @apply bg-danger-light;
+        }
+      }
+    }
+  }
+}

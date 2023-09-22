@@ -1,0 +1,6 @@
+.cart-link{
+    @apply  flex justify-center cursor-pointer items-center;
+    svg{
+        @apply mr-[5px];
+    }
+}

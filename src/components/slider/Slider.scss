@@ -1,0 +1,21 @@
+.slider {
+  @apply flex flex-col h-[90vh] md:flex-row;
+  .slider-text-container {
+    @apply flex-1 flex items-center justify-center flex-col gap-8 text-mint bg-body-lightgrey p-4 lg:p-8;
+    h1 {
+      @apply font-bold text-center p-4 text-3xl;
+    }
+    p {
+      @apply text-center;
+    }
+    button {
+      @apply bg-mint rounded-[5px] py-[10px] px-[5px] text-white;
+    }
+  }
+  .slider-img-container {
+    @apply w-full flex-1 relative items-center;
+    img {
+        @apply object-cover;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.single-product{
+    @apply relative h-[84vh] sm:h-[83vh] p-4 lg:px-20 flex flex-col justify-around text-mint sm:flex-row sm:gap-[20px] sm:items-center;
+    .single-product-image-container{
+        @apply relative w-full h-1/2;
+        img{
+            @apply object-contain ;
+        }
+    }
+    .single-product-text-container{
+        @apply flex h-1/2 flex-col gap-4 ;
+        h1{
+            @apply text-3xl font-bold 
+        }
+    }
+}

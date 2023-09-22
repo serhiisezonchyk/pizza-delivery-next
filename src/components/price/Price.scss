@@ -1,0 +1,32 @@
+.price-container{
+    @apply flex flex-col gap-[20px];
+    h2{
+        @apply font-bold text-2xl;
+    }
+    .options-container{
+        @apply flex gap-[20px];
+        button{
+            @apply min-w-[100px] px-[10px] py-[5px] ring-[1px] ring-mint rounded-[5px];
+            &.active{
+                @apply bg-mint text-white;
+            }
+        }
+
+    }
+
+    .quantity-div{
+        @apply flex justify-between items-center;
+        .quantity-container{
+            @apply flex justify-between w-full px-[10px] py-[5px] border-[1px] border-mint gap-4 items-center;
+            .quantity-changer{
+                @apply flex gap-4 items-center;
+                button{
+                    @apply text-[20px] mx-[5px]
+                }
+            }
+        }
+        .to-cart-button{
+            @apply w-[200px] text-[17px] ms-[5px] px-[10px] py-[5px] bg-mint text-white rounded-[5px];
+        }
+    }
+}

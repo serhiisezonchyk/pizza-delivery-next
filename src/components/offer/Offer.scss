@@ -1,0 +1,18 @@
+.offer {
+  @apply bg-black h-screen flex flex-col sm:flex-row;
+  .offer-text-container {
+    @apply flex-1 flex text-white flex-col justify-center items-center text-center gap-8 p-6 sm:items-start sm:text-start;
+    h1{
+        @apply text-4xl font-bold xl:text-5xl;
+    }
+    button{
+        @apply bg-mint rounded-[5px] px-[10px] py-[5px];
+    }
+  }
+  .offer-image-container {
+    @apply flex-1 w-full relative;
+    img {
+      @apply object-contain;
+    }
+  }
+}

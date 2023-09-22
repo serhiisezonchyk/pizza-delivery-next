@@ -1,0 +1,24 @@
+.nav-bar {
+  @apply relative bg-white h-[50px] sm:h-[60px] text-mint text-[16px] sm:text-[18px] p-[5px] flex justify-between items-center border-b-[1px] border-b-mint z-50;
+  .logo {
+    img {
+      @apply h-[40px] w-auto;
+    }
+  }
+  .md-menu {
+    @apply hidden  sm:flex gap-4 lg:px-[30px];
+    .auth-links {
+      @apply flex flex-row gap-2;
+      span{
+        @apply cursor-pointer;
+      }
+    }
+  }
+  .sm-menu {
+    @apply flex  sm:hidden;
+  }
+
+  &.fixed-sb {
+    @apply bg-white sticky top-0 left-0 right-0;
+  }
+}

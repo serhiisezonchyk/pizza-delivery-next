@@ -1,0 +1,6 @@
+.delete-button{
+    @apply bg-danger px-[10px] py-[10px] cursor-pointer absolute top-[12px] right-[40px]  text-white rounded-[5px];
+    svg{
+        @apply text-[24px];
+    }
+}

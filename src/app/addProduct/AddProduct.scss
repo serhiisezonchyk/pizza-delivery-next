@@ -1,0 +1,39 @@
+.add-product-page {
+  @apply w-full h-[84vh] sm:h-[83vh] flex justify-center;
+  .add-product-form {
+    @apply flex w-full sm:w-2/3 lg:w-1/2 flex-wrap p-[12px] gap-4 overflow-y-scroll ;
+    h1 {
+      @apply text-center w-full font-bold text-mint uppercase;
+    }
+    .input-div {
+      @apply flex w-full flex-col gap-2;
+      input {
+        @apply outline-none p-2 border-b-[2px] border-b-mint;
+      }
+      textarea {
+        @apply border-[1px] border-mint;
+      }
+      .options-div {
+        @apply flex gap-2;
+      }
+      .options-add-button {
+        @apply bg-mint w-1/2 rounded-[5px] px-[5px] py-[10px] self-center my-[5px] text-white cursor-pointer;
+      }
+      button {
+        @apply bg-mint w-1/2 rounded-[5px] px-[5px] py-[10px] self-center my-[5px] text-white;
+      }
+    }
+    .options-container{
+        @apply flex flex-col  ;
+        .option-item{
+            @apply flex flex-row gap-8 border-[1px] border-mint rounded-[5px] p-2 my-[5px] justify-between;
+            .options-delete-button{
+                @apply bg-mint p-[3px] text-[16px] rounded-[5px] text-white cursor-pointer;
+            }
+            .option-item-spans{
+                @apply flex flex-row gap-2
+            }
+        }
+    }
+  }
+}

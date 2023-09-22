@@ -1,0 +1,6 @@
+.success-page{
+    @apply w-full h-[84vh] sm:h-[83vh] flex justify-center text-center;
+    p{
+        @apply text-mint text-[18px];
+    }
+}

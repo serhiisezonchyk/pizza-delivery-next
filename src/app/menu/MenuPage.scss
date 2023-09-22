@@ -1,0 +1,10 @@
+.menu {
+  @apply flex flex-col text-black items-center h-[82vh] sm:h-[81vh] my-[10px] sm:gap-4;
+  a {
+    @apply bg-white border-b-mint border-b-[1px] sm:border-mint sm:border-[1px] sm:rounded-[5px] 
+        flex justify-between cursor-pointer py-[20px] px-[10px] w-full  sm:w-1/2 hover:bg-body-lightgrey transition-all duration-300 ease-in-out;
+    svg {
+      @apply text-[23px];
+    }
+  }
+}
